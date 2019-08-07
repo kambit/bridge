@@ -306,8 +306,8 @@ contract Side is Bridge {
         }
 
         // everything is fine, accept the message
-        BridgeRecipient bridgeRecipient = BridgeRecipient(recipient);
-        bridgeRecipient.acceptMessage(data, sender);
+        // BridgeRecipient bridgeRecipient = BridgeRecipient(recipient);
+        // bridgeRecipient.acceptMessage(data, sender);
         emit AcceptedMessage(hash, sender, recipient);
     }
 
